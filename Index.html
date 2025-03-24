@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat</title>
+    <Style>
+        .header{
+            height: 98vh;
+            width: 100%;
+           background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.3)),url(Travel\ destination.jpg);
+           background-position: center;
+           background-size: cover;
+           margin-top: -12px;
+            
+        }
+
+        .navbar{
+            background-color: rgb(18, 190, 237);
+            border-radius: 10px;
+            top: 0;
+            position: absolute;
+            position: sticky;
+        
+            
+        }
+
+        .navbar ul{
+            overflow: auto;
+            margin-left: 500px;
+            margin-top: -80px;
+        }
+
+        .navbar ul li{
+            float:left;
+            list-style: none;
+            margin: 15px 25px;
+
+        }
+
+        .navbar ul li a{
+            padding: 10px 20px;
+            color: rgb(5, 5, 5);
+            font-size: 25px;
+            text-decoration: none;
+        }
+
+        .h1{
+            text-align: center;
+            margin-top: 250px;
+            font-size: 60px;
+            color: white;
+        }
+
+        .container{
+            background-color: #ffffff;
+            width: 70%;
+            margin: 20px auto;
+            padding: 6px 10px;
+            border-radius: 15px;
+
+        }
+
+        .container form{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .container form input{
+            display: block;
+            border: 0;
+            outline: none;
+            background: transparent;
+            color: black;
+           
+        }
+
+
+        .container form input button{
+            background: #ff5361;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            border: 0;
+            outline: none;
+            margin-left: 25px;
+
+            cursor: pointer;
+
+        }
+
+
+        .container form input button img{
+            width: 15px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+
+        .input-location{
+            flex: 1;
+        }
+
+
+        
+
+        .Ram{
+            margin-left: 25px;
+           border-radius: 40px;
+            width: 400px;
+            margin-top: 5px;
+            
+
+        }
+        .destination{
+            text-align: center;
+            font-size: 40px;     
+            margin-left: 15px;  
+        }
+
+
+        .kedarnath{
+             
+            width: 400px;
+            border-radius: 40px;
+            height: 250px;    
+            margin-top: 5px;
+        }
+
+
+        .exclusive{
+            margin-left: 45px;
+            
+        }
+
+
+        .exclusive2{
+            margin-left: 45px;
+        }
+
+
+         
+        
+        .cta{
+           margin: 80px 0; 
+           width: 1300px;
+           background-image: linear-gradient( to right, #3f2321, transparent ),url(sofa\ 2.jpg);
+           background-size: cover;
+           background-position: center;
+           border-radius: 10px;
+           padding: 5px;
+           color: white;
+            margin-left: 100px;
+        }
+
+        .cta h3{
+           font-size: 4vw;
+           line-height: 5.3vw;
+           font-weight: 500; 
+           margin-left: 40px;
+           margin-top: -5px;
+        }
+
+
+        .cta p{
+            font-size: 18px;
+            margin-top: -60px;
+            margin-left: 40px;
+        }
+        .cta-btn{
+            font-size: 15px;
+            margin-top: -10px;
+            margin-left: 40px;
+            color: #080808;
+             background: #ffffff;
+             text-decoration: none;
+             border-radius: 8px;
+             padding: 12px 30px;
+             display: inline-block;
+        }
+
+        /*----------------Travellers stories -------------*/
+
+        .stories{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+            grid-gap: 30px;
+            margin-bottom: 30px;
+        }
+        .stories div img{
+            width: 400px;
+            border-radius: 10px;
+            height: 250px;
+            margin-left: 25px;
+        }
+        .stories div {
+            position: relative;
+            text-align: center;
+        }
+        .stories p{
+            width: 80;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: #f70029;
+            font-size: 26px;
+
+        }
+
+        .start-btn{
+            text-decoration: none;
+            background: #ff5361;
+            color: #f6eeee;
+            width: 80%;
+            max-width: 350px;
+            display: block;
+            text-align: center;
+            margin: 60px auto;
+            padding: 15px;
+            border-radius: 30px;
+            font-size: 20px;
+
+
+        }
+        /*---------------about message--------------*/
+        .about-msg{
+            text-align: center;
+            margin: 80px 0;
+            color: #333;
+            font-size: 17px;
+        }
+        .about-msg h2{
+            font-size: 28px;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+/*-----------------------------footer--------------------------------*/
+
+.footer{
+    margin: 80px 0 10px;
+    text-align: center;
+}
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.footer hr{
+    background: #999;
+    height: 1px;
+    width: 100%;
+    border: 0;
+    margin: 20px 0;
+}
+.footer p{
+    padding-bottom: 15px;
+}
+
+    </Style>
+</head>
+
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <h1 style="margin-top: 14px; font-size: 40px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 15px;">Bharat</h1>
+            <ul> 
+                
+                <li> <a href=" https://www.makemytrip.com/hotels/ "><b>Hotel</b> </a>  </li>
+                <li> <a h
+                    
+                    
+                    ref=" https://www.makemytrip.com/bus-tickets/"> <b>Bus</b> </a> </li>
+                <li> <a href=" https://www.makemytrip.com/railways/ "> <b>Train</b> </a> </li>
+                <li> <a href="https://www.makemytrip.com/flights/ "><b> Flight</b> </a> </li>
+                <li> <a href="http://127.0.0.1:3000/Form.html "> <b> Sign up  </b> </a> </li>
+                <li> <a href="http://127.0.0.1:3000/log%20in%20.html "> <b> Log in </b> </a> </li>
+
+                
+            </ul>
+        </nav>
+        <h1 class="h1">Your plan your destination</h1>
+        
+        <div class="container">
+            <form>
+                <div class="input-location">
+                    <label><b>Location</b></label>
+                    <input type="text" placeholder="where are you going">
+                </div>
+                <div>
+                    <label><b>Chech in</b></label>
+                    <input type="text" placeholder="date">
+                </div>
+                <div>
+                    <label><b>Chech out</b></label>
+                    <input type="text" placeholder="Date">
+                </div>
+                <div>
+                    <label><b>Guest</b></label>
+                    <input type="text" placeholder="Add Guest">
+                </div>
+                <button style="border-radius: 10px;"><b>Search</b></button>
+
+            </form>
+        </div>
+    </header>
+    
+
+    
+ 
+    <div class="India">
+        <h1 class="destination" > FREQUENTLY      MOST      VISITED        PLACE </h1>
+               
+         <div style="display: flex;">
+            <div style="width: 40%; margin-left:60px"><img src="ram mandir.avif" class="Ram" alt="https://en.wikipedia.org/wiki/Ram_Mandir" ></div>
+            <div style="width: 70%; font-size: 20px; margin-top: 15PX; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><p> The Shri Ram Janmabhoomi Teerth Kshetra trust began the first phase of construction of the Ram Temple<br> in March 2020. On 25 March 2020, Ram's idol was moved to a temporary location in the presence<br> of Chief Minister Yogi Adityanath.  
+
+                Larsen & Toubro offered to oversee the design and construction of the<br> temple free of cost and is the contractor of the project. Central Building Research Institute, National<br> Geophysical Research Institute and the Indian Institute of Technology (such as those Bombay, Guwahati,<br> and Madras) are assisting in areas such as soil testing, concrete and design. Reports emerged that the Indian<br> Space Research Organisation (ISRO) had identified a stream of the Sarayu which flows under the temple.  </p></div>
+         </div>
+         <div style="display: flex;">
+            <div style=" margin-left: 45px;" ><p style="font-size: 20px; width: 130%; margin-left: 35px; margin-top: 30px;  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">   One of the most revered temple destinations of India, Kedarnath town is nestled in the mighty Garhwal<br> Himalayas. The town, built around the revered Kedarnath temple, is located at an altitude of 3,580 m,<br> near Chorabari glacier, which is the source of the Mandakini river. Dedicated to Lord Shiva, the ancient <br>temple has exquisite architecture and is built of extremely large but evenly shaped grey stone slabs.<br>A conical rock formation inside the temple is worshipped as Lord Shiva in his “Sadashiva” form.<br>  The Kedarnath temple, dedicated to Lord Shiva, is a part of Char Dham pilgrimage circuit, and is one of <br>the 12 Jyotirlingas of Lord Shiva in India. Behind the Kedarnath temple, stand the Kedarnath peak,<br> Kedar Dome and other Himalayan peaks.  </P> </div>
+              <div style="  margin-left: 350px; margin-right:60px"><img src="Kedar nath.jpg" width="40%"alt="College" align="end" class="kedarnath"></div> 
+            </div>
+
+    </div>
+    <br>
+    <br>
+    <h1 style="text-align: center; font-size: 40px;"><b>DREAM DESTINATION</b></h1>
+
+    <div class="exclusive" style="display: flex;">
+         <div>
+            <img src="Kashmiri place.jpg" width="400px" height="250px" style="margin-left: 30px; border-radius: 15px;">
+            <a href="https://en.wikipedia.org/wiki/Kashmir" style="margin-left: 100px; font-size: 45px; text-decoration: none;"> Betaab Valley</a>
+            <h4 style="margin-left: 130px; margin-top: -5px;"><b>3 days 4 Night 30% off</b></h4>
+                 <h5 style="margin-left: 180px; margin-top: -19px; color: red;"><b>Rs 50,000</b></h5>
+            <p style="margin-left: 35px; margin-top: -15px;">Betaab Valley is a picturesque valley in Pahalgam, named <br>after the  famous movie Betaab. It is a popular tourist <br>destination for trekking, camping, photography and sightseeing.<br>You can visit this valley throughout the year and enjoy its<br> scenic beauty, lush meadows,streams and forests.</p>
+         </div>
+
+         <div>
+            <img src="France.jpg" width="400px" height="250px" style="margin-left: 50px; border-radius: 15px;">
+            <a href="https://en.wikipedia.org/wiki/France" style="margin-left: 200px; font-size: 45px; text-decoration: none;">France</a>
+            <h4 style="margin-left: 170px; margin-top: -5px;"><b>3 days 4 Night 30% off</b></h4>
+                 <h5 style="margin-left: 230px; margin-top: -19px; color: red;"><b>$15,000</b></h5>
+            <p style="margin-left: 55px; margin-top: -15px;">The Eiffel Tower is a wrought-iron lattice tower on the Champ<br> de Mars in Paris, France. It is named after the engineer Gustave<br> Eiffel, whose company designed and built the tower from 1887 to 1889.</p>
+         </div>
+
+            <div>
+                <img src="switzwerland village.webp"width="400px" height="250px" style="margin-left: 50px; border-radius: 15px;">
+                <a href="https://en.wikipedia.org/wiki/Switzerland" style="margin-left: 130px; font-size: 45px; text-decoration: none;"> switzweland</a>
+                 <h4 style="margin-left: 170px; margin-top: -5px;"><b>4 days 5 Night 30% off</b></h4>
+                 <h5 style="margin-left: 230px; margin-top: -19px; color: red;"><b>$10,000</b></h5>
+                 
+                <p style="margin-left: 60px; margin-top: -15px;">Switzerland, with its majestic mountains, charming villages,<br>and mesmerizing lakes, has long drawn the attention of<br> filmmakers around the globe. </p>
+
+            </div>
+
+            
+            
+         </div>
+
+        
+         
+         
+    </div>
+   
+      
+    <br>
+    <br>
+    
+
+    <div class="exclusive2" style="display: flex;">
+        <div>
+            <img src="ram mandir.avif" width="400px" height="250px" style="margin-left: 30px; border-radius: 15px;">
+            <a href="https://en.wikipedia.org/wiki/Ram_Mandir" style="margin-left: 100px; font-size: 45px; text-decoration: none;">Ram Mandir</a>
+            <h4 style="margin-left: 130px; margin-top: -5px;"><b>4 days 5 Night 30% off</b></h4>
+                 <h5 style="margin-left: 180px; margin-top: -19px; color: red;"><b>Rs 20,000</b></h5>
+            <p style="margin-left: 40px; margin-top: -15px;">The Ram Mandir is a partially constructed Hindu temple<br> complex in Ayodhya, Uttar Pradesh, India. Many Hindus<br> believe that it is located at the site of Ram Janmabhoomi,<br> the mythical birthplace of Rama, a principal deity of<br> Hinduism.The temple was inaugurated on 22 January <br>2024 after a prana pratishtha (consecration) ceremony.</p>
+    
+         </div>
+         <div>
+            <img src="redfort.jpg" width="400px" height="250px" style="margin-left: 50px; border-radius: 15px;">
+            <a href="https://en.wikipedia.org/wiki/Red_Fort" style="margin-left: 165px; font-size: 45px; text-decoration: none;"> Red Fort </a>
+            <h4 style="margin-left: 170px; margin-top: -5px;"><b>6 days 5 Night 30% off</b></h4>
+                 <h5 style="margin-left: 210px; margin-top: -19px; color: red;"><b>Rs 30,000</b></h5>
+            <p style="margin-left: 65px; margin-top: -15px;"> The Red Fort or Lal Qila is a historic fort in the Old Delhi<br> neighbourhood of Delhi, India, that historically served as the<br>main residence of the Mughal emperors. Emperor Shah<br>Jahan commissioned  construction  of the Red Fort on <br>12 May 1639, when he decided to shift his capital from<br>Agra to Delhi.</p>
+
+         </div>
+         <div>
+            <img src="ryvr.webp"width="400px" height="250px" style="margin-left: 50px; border-radius: 15px;">
+            <a href="https://en.wikipedia.org/wiki/Kashmir" style=" margin-left: 165px; font-size: 45px; text-decoration: none;"> Kashmir </a>
+            
+            <h4 style="margin-left: 170px; margin-top: -5px;"><b>4 days 5 Night 30% off</b></h4>
+                 <h5 style="margin-left: 220px; margin-top: -19px; color: red;"><b>Rs 10,000</b></h5>
+            <p style="margin-left: 55px; margin-top: -15px;">The word Kashmir is thought to have been derived from<br>Sanskrit and was referred to as káśmīraA popular local<br> etymology of Kashmira is that it is land desiccated from water.</p>
+         </div>
+        
+       
+
+        
+        
+     </div>
+  
+     <br>
+     <br>
+     <div class="exclusive2" style="display: flex;">
+        <div>
+            <img src="taj mahal.jpg" width="400px" height="250px" style="margin-left: 30px; border-radius: 15px;">
+            <a href="https://en.wikipedia.org/wiki/Taj_Mahal" style="margin-left: 140px; font-size: 45px; text-decoration: none;">Taj Mahal</a>
+            <h4 style="margin-left: 150px; margin-top: -5px;"><b>4 days 5 Night 30% off</b></h4>
+            <h5 style="margin-left: 200px; margin-top: -19px; color: red;"><b>Rs 10,000</b></h5>
+            <p style="margin-left: 40px; margin-top: -15px;"> The Taj Mahal is an ivory-white marble mausoleum on the <br>right bank of the river Yamuna in Agra, Uttar Pradesh,<br> India. It was commissioned in 1631 by the fifth Mughal <br>emperor, Shah Jahan to house the tomb of his beloved <br>wife, Mumtaz Mahal; it also houses the tomb of Shah <br>Jahan himself.</p>
+    
+         </div>
+         <div>
+            <img src="Kedar nath.jpg" width="400px" height="250px" style="margin-left: 50px; border-radius: 15px;">
+            <a href="https://en.wikipedia.org/wiki/Kedarnath" style="margin-left: 155px; font-size: 45px; text-decoration: none;"> Kedarnath </a>
+            <h4 style="margin-left: 170px; margin-top: -5px;"><b>4 days 5 Night 30% off</b></h4>
+                 <h5 style="margin-left: 210px; margin-top: -19px; color: red;"><b>Rs 40,000</b></h5>
+            <p style="margin-left: 65px;"> Kedarnath is a town and Nagar Panchayat in Rudraprayag<br> district of Uttarakhand, India, known primarily for the<br> Kedarnath Temple. It is approximately 86 kilometres<br> from Rudraprayag, the district headquarter. Kedarnath is<br> the most remote of the four Chota Char Dham pilgrimage <br>sites</p>
+
+         </div>
+         <div>
+            <img src="Hawa mahal.jpg"width="400px" height="250px" style="margin-left: 50px; border-radius: 15px;">
+            <a href="https://en.wikipedia.org/wiki/Hawa_Mahal" style=" margin-left: 195px; font-size: 45px; text-decoration: none;"> Jaipur </a>
+            <h4 style="margin-left: 180px; margin-top: -5px;"><b>4 days 5 Night 30% off</b></h4>
+                 <h5 style="margin-left: 230px; margin-top: -19px; color: red;"><b>Rs 20,000</b></h5>
+            <p style="margin-left: 55px; margin-top: -15px;">The Hawa Mahal is a palace in the city of Jaipur, Rajasthan,<br> India. Built from red and pink sandstone, it is on the edge<br> of the City Palace, Jaipur, and extends to the Zenana, or<br> women's chambers</p>
+         </div>
+     <br>
+
+     </div>
+     <br>
+     <br>
+
+     <h2 style="margin-top: 15px; font-size: 45px; margin-left: 600px; width: 310px; background-color: red; padding: 8px; border-radius: 20px;"><b> Trending Places</b></h2>
+     <br>
+
+     <div class="exclusive2" style="display: flex;">
+     <div>
+           <img src="lotus temple.jpg" width="400px" height="250px" style="margin-left: 30px; border-radius: 15px;">
+                <a href="https://en.wikipedia.org/wiki/Lotus_Temple" style="margin-left: 100px; font-size: 45px; text-decoration: none;">Lotus Temple</a>
+                <h4 style="margin-left: 140px; margin-top: -5px;"><b>4 days 5 Night 30% off</b></h4>
+                 <h5 style="margin-left: 180px; margin-top: -19px; color: red;"><b>RS 10,000</b></h5>
+                <p style="margin-left: 40px; margin-top: -15px;"> The Taj Mahal is an ivory-white marble mausoleum on the<br> right bank of the river Yamuna in Agra, Uttar Pradesh, India.<br> It was commissioned in 1631 by the fifth Mughal emperor,<br> Shah Jahan  to house the tomb of his beloved wife, Mumtaz<br> Mahal; it also houses the tomb of Shah Jahan himself.</p>
+       </a>
+         </div>
+       
+         <div>
+            <img src="Glass bridge.jpg" width="400px" height="250px" style="margin-left: 50px; border-radius: 15px;">
+            <a href="https://en.wikipedia.org/wiki/Bridges_in_Bihar" style="margin-left: 155px; font-size: 45px; text-decoration: none;"> Glass bridge </a>
+            <h4 style="margin-left: 170px; margin-top: -5px;"><b>4 days 5 Night 30% off</b></h4>
+                 <h5 style="margin-left: 230px; margin-top: -19px; color: red;"><b>Rs 15,000</b></h5>
+            <p style="margin-left: 65px; margin-top: -15px;">The Rajgir Glass Bridge is a breathtaking suspension bridge<br> made entirely of transparent glass, offering visitors a unique<br>and exhilarating experience as they walk across its surface.<br> It is located in the ancient city of Rajgir, in the Indian state<br> of Bihar. The bridge is 85 feet long and 6 feet<br> wide, spanning a tranquil lake amidst lush greenery</p>
+
+         </div>
+         <div>
+            <img src="Australia.avif"width="400px" height="250px" style="margin-left: 50px; border-radius: 15px;">
+            <a href="https://en.wikipedia.org/wiki/Sydney_Opera_House" style=" margin-left: 135px; font-size: 45px; text-decoration: none;"> Opera House </a>
+            <h4 style="margin-left: 180px; margin-top: -5px;"><b>4 days 5 Night 30% off</b></h4>
+                 <h5 style="margin-left: 230px; margin-top: -19px; color: red;"><b>$30,000</b></h5>
+            <p style="margin-left: 55px; margin-top: -15px;">The Sydney Opera House is a multi-venue performing arts<br> centre  in Sydney, New South Wales, Australia. Located on<br> the foreshore of Sydney Harbour, it is widely regarded as<br> one of the world's most famous and distinctive buildings <br>and a masterpiece of 20th-century architecture</p>
+         </div>
+     </div>
+    
+     
+     
+    <div class="cta">
+        <h3> Sharing<br> Is Earning Now </h3>
+        <p>Great opportunity to make money by <br>sharing your extra space.</p>
+        <a href="#" class="cta-btn">Know More</a>
+
+    </div>
+
+    <h2 class="sub-title" style="margin-left: 40px; font-size: 45px;">Travellers Story</h2>
+    <div class="stories">
+        <div>
+            <img src="Europeam country.jpg">
+            <p style="color: rgb(255, 251, 251); margin-top:-60px; margin-left:-40px">Popular europeam Country with budget of just $10,000</p>
+        </div>
+        <div>
+            <img src="buitiful city.jpg">
+            <p style="color: rgb(255, 251, 251); margin-top:-60px; margin-left:-40px">Travelled more than 100 countries in less than a year</p>
+        </div>
+        <div>
+            <img src="thailand.jpg">
+            <p style="color: rgb(255, 251, 251); margin-top:-60px; margin-left:-40px"> Best experience you get while travelling to thailand</p>
+        </div>
+
+    </div>
+    <a href="#" class="start-btn"> Start making a money</a>
+
+    <div class="about-msg">
+        <h2>About Bharat</h2>
+        <p>country to Popular belief, Lorem Ipsum is not random text. It has roots in a piece of classicals latin literature from 45BC, makin it over 2000yrs old.Richard McClintok, a Latin professor at Hampden-sydney college inn virginia, looked up one of the more obscure Latin words, consecteture, form a lorem Ipsum passage, and going through the cities of the word in classical literature, discovered the undoubtable source.</p>
+
+    </div>
+    <div class="footer">
+        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://youtube.com/"> <i class="fa-brands fa-youtube"></i></a>
+        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+         <hr>
+         <p>copyright @ 2021, Easy Tutorials.</p>
+
+
+    </div>
+
+ 
+
+</body>
+</html>
